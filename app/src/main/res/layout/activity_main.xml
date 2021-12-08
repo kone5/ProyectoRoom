@@ -21,11 +21,10 @@
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
-                android:layout_height="?attr/actionBarSize"
                 android:layout_width="match_parent"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay">
-            </android.support.v7.widget.Toolbar>
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"></android.support.v7.widget.Toolbar>
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -34,8 +33,10 @@
     <include
         android:id="@+id/include"
         layout="@layout/content_main"
+        android:layout_width="435dp"
         app:layout_anchor="@+id/include"
-        app:layout_anchorGravity="center" />
+        app:layout_anchorGravity="center"
+        android:layout_height="TODO" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -44,6 +45,8 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_add_black_24dp"
-        app:backgroundTint="@color/colorTextPrimary" />
+        app:backgroundTint="@color/colorTextPrimary"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+        android:contentDescription="@string/todo" />
 
 </android.support.design.widget.CoordinatorLayout>

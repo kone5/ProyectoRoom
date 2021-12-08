@@ -5,4 +5,5 @@
     <string name="button_save">Guardar</string>
     <string name="placeholder_text">Texto de relleno</string>
     <string name="empty_not_saved">La palabra no fue guardada porque el campo esta vacio.</string>
+    <string name="todo">TODO</string>
 </resources>
